@@ -1,0 +1,350 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Portafolio académico y profesional de Vicente Fonseca, estudiante de Ingeniería Civil en Informática en la Universidad Católica de Temuco.">
+    <meta name="theme-color" content="#140a2b">
+    <title>Vicente Fonseca | Portafolio Frontend ICINF1107</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,600;12..96,800&family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+    <!-- Enlace de salto para navegación por teclado (WCAG) -->
+    <a href="#main-content" class="skip-link">Saltar al contenido principal</a>
+
+    <!-- Barra de progreso de lectura (decorativa) -->
+    <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+    <!-- Encabezado principal -->
+    <header class="header" id="header">
+        <div class="header-container">
+            <a href="#inicio" class="brand" aria-label="Vicente Fonseca, ir al inicio">
+                <span class="brand-mark" aria-hidden="true">VF</span>
+                <span class="brand-name">Vicente Fonseca</span>
+            </a>
+
+            <nav class="nav" aria-label="Navegación principal">
+                <ul class="nav-list">
+                    <li><a href="#sobre-mi" class="nav-link">Sobre mí</a></li>
+                    <li><a href="#trabajos" class="nav-link">Trabajos</a></li>
+                    <li><a href="#contacto" class="nav-link nav-cta">Contacto</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main id="main-content">
+
+        <!-- Portada -->
+        <section id="inicio" class="hero" aria-labelledby="hero-heading">
+
+            <div class="container hero-content">
+                <div class="avatar-wrap">
+                    <img src="img/perfil.jpg" alt="Ilustración en pixel art de un personaje con gorro verde sentado entre flores" class="avatar" width="320" height="320">
+                </div>
+                <p class="hero-kicker">Ingeniería Civil en Informática · UCT</p>
+                <h1 id="hero-heading" class="hero-title">
+                    <span class="line"><span>Vicente</span></span>
+                    <span class="line"><span>Fonseca</span></span>
+                </h1>
+                <p class="hero-lead">Construyo interfaces web <strong>semánticas, accesibles y responsivas</strong> pensadas para que quien las visita encuentre lo que busca rápido.</p>
+                <div class="hero-actions">
+                    <a href="#trabajos" class="btn btn-primary">Ver mis trabajos</a>
+                    <a href="#contacto" class="btn btn-ghost">Escribirme</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 1: Sobre mí -->
+        <section id="sobre-mi" class="section sobre-mi" aria-labelledby="sobre-mi-heading">
+            <div class="container">
+                <header class="section-head reveal">
+                    <h2 id="sobre-mi-heading">Sobre mí</h2>
+                    <p class="section-desc">Quién soy y qué estoy aprendiendo.</p>
+                </header>
+
+                <div class="about-grid">
+                    <div class="bio-text reveal">
+                        <p>
+                            ¡Hola! Soy <strong>Vicente Fonseca</strong>, estudiante de primer año de Ingeniería Civil en Informática en la
+                            <strong>Universidad Católica de Temuco</strong>. Me enfoco en el desarrollo de software y en la construcción de interfaces web
+                            modernas, accesibles y responsivas.
+                        </p>
+                        <p>
+                            Actualmente desarrollo competencias en arquitectura Frontend (HTML5, CSS3),
+                            buenas prácticas de accesibilidad web (WCAG) y desarrollo backend estructurado.
+                        </p>
+                    </div>
+
+                    <ul class="facts" aria-label="Datos destacados">
+                        <li class="fact reveal">
+                            <span class="fact-value">1.º</span>
+                            <span class="fact-label">año de carrera</span>
+                        </li>
+                        <li class="fact reveal">
+                            <span class="fact-value">3</span>
+                            <span class="fact-label">puntos de quiebre responsivos</span>
+                        </li>
+                        <li class="fact reveal">
+                            <span class="fact-value">WCAG</span>
+                            <span class="fact-label">accesibilidad como base</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 2: Trabajos del semestre -->
+        <section id="trabajos" class="section trabajos" aria-labelledby="trabajos-heading">
+            <div class="container">
+                <header class="section-head reveal">
+                    <h2 id="trabajos-heading">Trabajos y evidencias de mi progreso</h2>
+                    <p class="section-desc">Evidencias del aprendizaje práctico desarrolladas durante el tiempo que me he desarrollado en el ámbito.</p>
+                </header>
+
+                <div class="projects-grid">
+
+                    <article class="card reveal">
+                        <div class="card-media card-media--img">
+                            <img src="proyectos/psicoanalisis-conductual/img/CerebroPixelArt.png" alt="Vista previa de Pixel Art sobre neurodiversidad" class="card-thumb" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <h3>Psicoanálisis Conductual</h3>
+                            <p class="card-desc">Proyecto de educación media sobre neurodiversidad y desórdenes de conducta (TEPT, TEA, Psicopatía). Incluye ilustraciones propias en Pixel Art y animaciones SVG vectoriales.</p>
+                            <ul class="tags-list" aria-label="Tecnologías utilizadas">
+                                <li class="tag">HTML5</li>
+                                <li class="tag">CSS3</li>
+                                <li class="tag">SVG / GSAP</li>
+                                <li class="tag">Pixel Art</li>
+                            </ul>
+                            <a href="proyectos/psicoanalisis-conductual/index.html" class="btn btn-card" target="_blank" rel="noopener">Ver proyecto completo<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a>
+                        </div>
+                    </article>
+
+                    <article class="card reveal">
+                        <div class="card-media card-media--code" aria-hidden="true">
+                            <svg class="gh-icon" viewBox="0 0 16 16" width="84" height="84" fill="currentColor" focusable="false"><path d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.01 8.01 0 0 0 16 8c0-4.42-3.58-8-8-8z"/></svg>
+                        </div>
+                        <div class="card-body">
+                            <h3>Mi perfil de GitHub</h3>
+                            <p class="card-desc">Repositorios y código de mis proyectos durante mi primer año, con control de versiones en Git.</p>
+                            <ul class="tags-list" aria-label="Tecnologías utilizadas">
+                                <li class="tag">Git</li>
+                                <li class="tag">GitHub</li>
+                            </ul>
+                            <a href="https://github.com/vfonseca2026-afk" class="btn btn-card" target="_blank" rel="noopener">Ver perfil en GitHub<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a>
+                        </div>
+                    </article>
+
+                    <article class="card reveal">
+                        <div class="card-media card-media--hongos">
+                            <img src="img/hongo.png" alt="Ilustración en pixel art de un hongo rojo con puntos blancos" class="card-thumb" loading="lazy">
+                        </div>
+                        <div class="card-body">
+                            <h3>Bitácora de hongos</h3>
+                            <p class="card-desc">Registro fotográfico de hongos avistados en un cerro de Temuco. Incluye un carrusel 3D con 14 fotos navegable con teclado, botones o deslizando, y un mapa con la ubicación exacta.</p>
+                            <ul class="tags-list" aria-label="Tecnologías utilizadas">
+                                <li class="tag">HTML5</li>
+                                <li class="tag">CSS3</li>
+                                <li class="tag">JavaScript</li>
+                                <li class="tag">Google Maps</li>
+                            </ul>
+                            <a href="proyectos/HongosTemuco/HongosTemuco.html" class="btn btn-card" target="_blank" rel="noopener">Ver proyecto completo<span class="visually-hidden"> (se abre en una pestaña nueva)</span></a>
+                        </div>
+                    </article>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 3: Contacto -->
+        <section id="contacto" class="section contacto" aria-labelledby="contacto-heading">
+            <div class="container container--narrow">
+                <header class="section-head reveal">
+                    <h2 id="contacto-heading">Contacto</h2>
+                    <p class="section-desc">¿Quieres conversar sobre un proyecto o una oportunidad? Escríbeme.</p>
+                </header>
+
+                <form class="form reveal" action="#" method="post">
+                    <div class="form-row">
+                        <div class="form-group">
+                            <label for="c-nombre">Nombre completo <span class="required" aria-hidden="true">*</span></label>
+                            <input type="text" id="c-nombre" name="nombre" required autocomplete="name" placeholder="Ej. Juan Pérez">
+                        </div>
+                        <div class="form-group">
+                            <label for="c-email">Correo electrónico <span class="required" aria-hidden="true">*</span></label>
+                            <input type="email" id="c-email" name="email" required autocomplete="email" placeholder="ejemplo@correo.cl">
+                        </div>
+                    </div>
+                    <div class="form-group">
+                        <label for="c-asunto">Asunto</label>
+                        <input type="text" id="c-asunto" name="asunto" placeholder="Motivo de consulta">
+                    </div>
+                    <div class="form-group">
+                        <label for="c-mensaje">Mensaje <span class="required" aria-hidden="true">*</span></label>
+                        <textarea id="c-mensaje" name="mensaje" rows="5" required placeholder="Escribe tu mensaje aquí..."></textarea>
+                    </div>
+                    <p class="form-note"><span class="required" aria-hidden="true">*</span> Campos obligatorios</p>
+                    <button type="submit" class="btn btn-primary btn-block">Enviar mensaje</button>
+                </form>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- Pie de página -->
+    <footer class="footer">
+        <div class="container footer-content">
+            <p>&copy; 2026 Vicente Fonseca — Ingeniería Civil en Informática, UCT.</p>
+            <p class="footer-sub">ICINF1107 Desarrollo de Frontend · Profesor: Cristian Iglesias Vera</p>
+        </div>
+    </footer>
+
+    <!-- Botón flotante del robot -->
+    <button class="info-button" id="infoBtn" type="button" aria-label="Abrir formulario de contacto rápido" aria-haspopup="dialog" aria-controls="popupContent" aria-expanded="false">
+        <span class="robot" aria-hidden="true">
+            <span class="robot-antenna"></span>
+            <span class="robot-head">
+                <span class="robot-screen">
+                    <span class="robot-eye"></span>
+                    <span class="robot-eye"></span>
+                    <span class="robot-mouth"></span>
+                </span>
+            </span>
+            <span class="robot-arm left"></span>
+            <span class="robot-arm right"></span>
+            <span class="robot-body"></span>
+        </span>
+    </button>
+
+    <!-- Overlay del popup -->
+    <div class="popup-overlay" id="popupOverlay"></div>
+
+    <!-- Popup de contacto rápido -->
+    <div class="popup-content" id="popupContent" role="dialog" aria-modal="true" aria-labelledby="popup-title">
+        <button class="close-btn" id="closeBtn" type="button" aria-label="Cerrar formulario">&times;</button>
+
+        <div class="popup-header">
+            <h2 id="popup-title">Contáctame</h2>
+        </div>
+
+        <form class="contact-form" action="#" method="post">
+            <div class="form-group">
+                <label for="p-nombre">Nombre completo <span class="required" aria-hidden="true">*</span></label>
+                <input type="text" id="p-nombre" name="nombre" required autocomplete="name" placeholder="Ej. Juan Pérez">
+            </div>
+            <div class="form-group">
+                <label for="p-email">Correo electrónico <span class="required" aria-hidden="true">*</span></label>
+                <input type="email" id="p-email" name="email" required autocomplete="email" placeholder="ejemplo@correo.cl">
+            </div>
+            <div class="form-group">
+                <label for="p-asunto">Asunto</label>
+                <input type="text" id="p-asunto" name="asunto" placeholder="Motivo de consulta">
+            </div>
+            <div class="form-group">
+                <label for="p-mensaje">Mensaje <span class="required" aria-hidden="true">*</span></label>
+                <textarea id="p-mensaje" name="mensaje" rows="4" required placeholder="Escribe tu mensaje aquí..."></textarea>
+            </div>
+            <button type="submit" class="btn-submit">Enviar mensaje</button>
+        </form>
+    </div>
+
+    <script>
+        (function () {
+            const root = document.documentElement;
+            root.classList.add('js');
+
+            /* ---------- Popup del robot ---------- */
+            const infoBtn = document.getElementById('infoBtn');
+            const popupOverlay = document.getElementById('popupOverlay');
+            const popupContent = document.getElementById('popupContent');
+            const closeBtn = document.getElementById('closeBtn');
+            let lastFocused = null;
+
+            function openPopup() {
+                lastFocused = document.activeElement;
+                infoBtn.classList.add('active');
+                infoBtn.setAttribute('aria-expanded', 'true');
+                popupOverlay.classList.add('active');
+                popupContent.classList.add('active');
+                setTimeout(() => document.getElementById('p-nombre').focus(), 350);
+            }
+
+            function closePopup() {
+                infoBtn.classList.remove('active');
+                infoBtn.setAttribute('aria-expanded', 'false');
+                popupContent.classList.remove('active');
+                popupOverlay.classList.remove('active');
+                if (lastFocused) lastFocused.focus();
+            }
+
+            infoBtn.addEventListener('click', openPopup);
+            closeBtn.addEventListener('click', closePopup);
+            popupOverlay.addEventListener('click', closePopup);
+
+            document.addEventListener('keydown', (e) => {
+                if (!popupContent.classList.contains('active')) return;
+                if (e.key === 'Escape') { closePopup(); return; }
+                if (e.key === 'Tab') {
+                    const f = popupContent.querySelectorAll('button, input, textarea');
+                    const first = f[0], last = f[f.length - 1];
+                    if (e.shiftKey && document.activeElement === first) { e.preventDefault(); last.focus(); }
+                    else if (!e.shiftKey && document.activeElement === last) { e.preventDefault(); first.focus(); }
+                }
+            });
+
+            /* ---------- Aparición al hacer scroll ---------- */
+            const items = document.querySelectorAll('.reveal');
+            if ('IntersectionObserver' in window) {
+                const io = new IntersectionObserver((entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            entry.target.classList.add('in');
+                            io.unobserve(entry.target);
+                        }
+                    });
+                }, { threshold: 0.15 });
+                items.forEach((el, i) => {
+                    el.style.setProperty('--d', (i % 3) * 90 + 'ms');
+                    io.observe(el);
+                });
+            } else {
+                items.forEach((el) => el.classList.add('in'));
+            }
+
+            /* ---------- Progreso de lectura y sombra del header ---------- */
+            const bar = document.getElementById('scrollProgress');
+            const header = document.getElementById('header');
+            function onScroll() {
+                const max = document.documentElement.scrollHeight - window.innerHeight;
+                bar.style.transform = 'scaleX(' + (max > 0 ? window.scrollY / max : 0) + ')';
+                header.classList.toggle('scrolled', window.scrollY > 10);
+            }
+            window.addEventListener('scroll', onScroll, { passive: true });
+            onScroll();
+
+            /* ---------- Enlace activo en la navegación ---------- */
+            const links = document.querySelectorAll('.nav-link');
+            const sections = ['sobre-mi', 'trabajos', 'contacto'].map((id) => document.getElementById(id));
+            if ('IntersectionObserver' in window) {
+                const so = new IntersectionObserver((entries) => {
+                    entries.forEach((entry) => {
+                        if (entry.isIntersecting) {
+                            links.forEach((l) => {
+                                const on = l.getAttribute('href') === '#' + entry.target.id;
+                                l.classList.toggle('is-active', on);
+                                if (on) l.setAttribute('aria-current', 'true'); else l.removeAttribute('aria-current');
+                            });
+                        }
+                    });
+                }, { rootMargin: '-45% 0px -50% 0px' });
+                sections.forEach((s) => s && so.observe(s));
+            }
+        })();
+    </script>
+</body>
+</html>
