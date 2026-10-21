@@ -2,16 +2,16 @@
    1. VARIABLES Y CONFIGURACIÓN GENERAL (Mobile First)
    ========================================================================== */
 :root {
-    --ink: #140a2b;                 /* Azul noche: fondos oscuros */
+    --ink: #140a2b;                 
     --ink-2: #1f1042;
-    --primary-color: #4c1d95;       /* Azul institucional */
+    --primary-color: #4c1d95;       
     --primary-hover: #3b1478;
-    --cyan: #c4b5fd;                /* Acento sobre fondos oscuros */
-    --cyan-dark: #6d28d9;           /* Acento sobre fondos claros (AA) */
-    --amber: #fcd1ae;               /* Acento cálido */
+    --cyan: #c4b5fd;                
+    --cyan-dark: #6d28d9;           
+    --amber: #fcd1ae;               
     --bg-main: #f6f2fc;
     --bg-card: #ffffff;
-    --text-primary: #0f172a;        /* Contraste > 7:1 sobre fondos claros */
+    --text-primary: #0f172a;        
     --text-muted: #475569;
     --text-on-dark: #e2e8f0;
     --border-color: #e4dcf5;
